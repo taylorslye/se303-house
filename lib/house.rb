@@ -14,6 +14,8 @@ class House
       "the rat that ate " + verse(2)
     when 4
       "the cat that killed " + verse(3)
+    when 5
+      "the dog that worried " + verse(4)
     end
   end
 
