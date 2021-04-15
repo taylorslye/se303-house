@@ -8,7 +8,7 @@ class House
     end
   end
 
-  def verse
+  def verse(number)
     return "the house that Jack built"
   end
 
