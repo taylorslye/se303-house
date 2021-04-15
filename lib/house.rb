@@ -16,6 +16,8 @@ class House
       "the cat that killed " + verse(3)
     when 5
       "the dog that worried " + verse(4)
+    when 6
+      "the cow with the crumpled horn that tossed " + verse(5)
     end
   end
 
