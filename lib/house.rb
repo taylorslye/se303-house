@@ -24,6 +24,8 @@ class House
       "the man all tattered and torn that kissed " + verse(7)
     when 9
       "the priest all shaven and shorn that married " + verse(8)
+    when 10
+      "the rooster that crowed in the morn that woke " + verse(9)
     end
   end
 
