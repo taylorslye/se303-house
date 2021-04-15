@@ -5,12 +5,13 @@ class House
   end
 
   def verse(number)
-    if number == 1
-      return "the house that Jack built"
-    elsif number == 2
-      return "the malt that lay in " + verse(1)
-    elsif number == 3
-      return "the rat that ate " + verse(2)
+    case number
+    when 1
+      "the house that Jack built"
+    when 2
+      "the malt that lay in " + verse(1)
+    when 3
+      "the rat that ate " + verse(2)
     end
   end
 
