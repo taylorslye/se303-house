@@ -26,6 +26,8 @@ class House
       "the priest all shaven and shorn that married " + verse(8)
     when 10
       "the rooster that crowed in the morn that woke " + verse(9)
+    when 11
+      "the farmer sowing his corn that kept " + verse(10)
     end
   end
 
