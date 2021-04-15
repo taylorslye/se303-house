@@ -7,8 +7,10 @@ class House
   def verse(number)
     if number == 1
       return "the house that Jack built"
-    else
+    elsif number == 2
       return "the malt that lay in " + verse(1)
+    elsif number == 3
+      return "the rat that ate " + verse(2)
     end
   end
 
