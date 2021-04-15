@@ -22,6 +22,8 @@ class House
       "the maiden all forlorn that milked " + verse(6)
     when 8
       "the man all tattered and torn that kissed " + verse(7)
+    when 9
+      "the priest all shaven and shorn that married " + verse(8)
     end
   end
 
