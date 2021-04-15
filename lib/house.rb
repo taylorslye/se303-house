@@ -20,6 +20,8 @@ class House
       "the cow with the crumpled horn that tossed " + verse(5)
     when 7
       "the maiden all forlorn that milked " + verse(6)
+    when 8
+      "the man all tattered and torn that kissed " + verse(7)
     end
   end
 
