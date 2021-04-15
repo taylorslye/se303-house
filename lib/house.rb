@@ -28,6 +28,8 @@ class House
       "the rooster that crowed in the morn that woke " + verse(9)
     when 11
       "the farmer sowing his corn that kept " + verse(10)
+    when 12
+      "the horse and the hound and the horn that belonged to " + verse(11)
     end
   end
 
