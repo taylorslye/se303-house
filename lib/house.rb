@@ -18,6 +18,8 @@ class House
       "the dog that worried " + verse(4)
     when 6
       "the cow with the crumpled horn that tossed " + verse(5)
+    when 7
+      "the maiden all forlorn that milked " + verse(6)
     end
   end
 
