@@ -32,5 +32,10 @@ class House
       "the horse and the hound and the horn that belonged to " + verse(11)
     end
   end
-
+  
+  def recite
+    1.upto(12).collect{ |i|
+      line(i)
+    }.join("\n")
+  end
 end
