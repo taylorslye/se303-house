@@ -5,7 +5,10 @@ class House
   end
 
   def verse(number)
-
+    case number
+    when 1
+      "This is the house that Jack built.\n"
+    end
   end
   
   def recite
