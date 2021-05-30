@@ -41,8 +41,8 @@ end
 
 class RandomHouse < House
 
-  def middle_section(number)
-    nounandverbs.first(number - 1).shuffle.join
+  def initialize
+    @nounandverbs.shuffle
   end
 
 end
