@@ -9,7 +9,7 @@ class House
     when 1
       ''
     when 2
-      verbandnoun[0]
+      nounandverb[0]
     when 3
       "rat that ate the malt that lay in the "
     when 4
@@ -33,7 +33,7 @@ class House
     end
   end
 
-  def verbandnoun
+  def nounandverb
     [
       "malt that lay in the "
     ]
