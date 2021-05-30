@@ -39,11 +39,19 @@ class PirateHouse < House
 
 end
 
-class RandomHouse < House
+module RandomHouse < House
 
   def initialize
     super
     @nounandverbs = @nounandverbs.shuffle
+  end
+
+end
+
+class RandomPirateHouse < RandomHouse
+
+  def line(number)
+    return "Thar be the " + middle_section(number) + "house that Jack built.\n"
   end
 
 end
