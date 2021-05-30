@@ -11,7 +11,7 @@ class House
     when 2
       nounandverb[0]
     when 3
-      "rat that ate the malt that lay in the "
+      nounandverb[1] + nounandverb[0]
     when 4
       "cat that killed the rat that ate the malt that lay in the "
     when 5
@@ -35,7 +35,8 @@ class House
 
   def nounandverb
     [
-      "malt that lay in the "
+      "malt that lay in the ",
+      "rat that ate the "
     ]
   end
   
