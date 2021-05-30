@@ -1,7 +1,11 @@
 class House
 
   def line(number)
-    return "This is the " + nounandverbs.first(number - 1).reverse.join + "house that Jack built.\n"
+    return "This is the " + middle_section(number) + "house that Jack built.\n"
+  end
+
+  def middle_section(number)
+    nounandverbs.first(number - 1).reverse.join
   end
 
   def nounandverbs
@@ -30,15 +34,15 @@ end
 class PirateHouse < House
 
   def line(number)
-    return "Thar be the " + nounandverbs.first(number - 1).reverse.join + "house that Jack built.\n"
+    return "Thar be the " + middle_section(number) + "house that Jack built.\n"
   end
 
 end
 
 class RandomHouse < House
 
-  def line(number)
-    return "This is the " + nounandverbs.first(number - 1).shuffle.join + "house that Jack built.\n"
+  def middle_section(number)
+    nounandverbs.first(number - 1).shuffle.join
   end
 
 end
