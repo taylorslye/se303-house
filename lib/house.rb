@@ -36,9 +36,8 @@ class House
   def middle_section(number)
     current_nouns = @nouns.first(number - 1).reverse
     current_verbs = @verbs.first(number - 1).reverse
-    middle_part = current_nouns.zip(current_verbs).map{ |i| i.join}
-    middle_part = middle_part.join
-    return middle_part
+    return (current_nouns.zip(current_verbs).map{ |i| i.join}).join
+
   end
   
   def recite
