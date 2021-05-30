@@ -34,3 +34,11 @@ class PirateHouse < House
   end
 
 end
+
+class RandomHouse < House
+
+  def line(number)
+    return "This is the " + nounandverbs.first(number - 1).shuffle.join + "house that Jack built.\n"
+  end
+
+end
