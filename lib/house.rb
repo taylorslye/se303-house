@@ -27,7 +27,7 @@ class House
   end
 end
 
-PirateHouse < House
+class PirateHouse < House
 
   def line(number)
     return "Thar be the " + nounandverbs.first(number - 1).reverse.join + "house that Jack built.\n"
