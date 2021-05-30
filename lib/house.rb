@@ -1,15 +1,7 @@
 class House
 
-  def line(number)
-    return "This is the " + middle_section(number) + "house that Jack built.\n"
-  end
-
-  def middle_section(number)
-    @nounandverbs.first(number - 1).reverse.join
-  end
-
-  def nounandverbs
-    [
+  def initialize
+    @nounandverbs = [
       "malt that lay in the ",
       "rat that ate the ",
       "cat that killed the ",
@@ -22,6 +14,14 @@ class House
       "farmer sowing his corn that kept the ",
       "horse and the hound and the horn that belonged to the "
     ]
+  end
+
+  def line(number)
+    return "This is the " + middle_section(number) + "house that Jack built.\n"
+  end
+
+  def middle_section(number)
+    @nounandverbs.first(number - 1).reverse.join
   end
   
   def recite
@@ -42,7 +42,8 @@ end
 class RandomHouse < House
 
   def initialize
-    @nounandverbs = nounandverbs.shuffle
+    super
+    @nounandverbs = @nounandverbs.shuffle
   end
 
 end
