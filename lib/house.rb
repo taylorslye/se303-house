@@ -5,7 +5,7 @@ class House
   end
 
   def middle_section(number)
-    nounandverbs.first(number - 1).reverse.join
+    @nounandverbs.first(number - 1).reverse.join
   end
 
   def nounandverbs
@@ -42,7 +42,7 @@ end
 class RandomHouse < House
 
   def initialize
-    @nounandverbs.shuffle
+    @nounandverbs = nounandverbs.shuffle
   end
 
 end
