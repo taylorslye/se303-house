@@ -39,7 +39,7 @@ class PirateHouse < House
 
 end
 
-module RandomHouse < House
+class RandomHouse < House
 
   def initialize
     super
