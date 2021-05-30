@@ -1,18 +1,31 @@
 class House
 
   def initialize
-    @nounandverbs = [
-      "malt that lay in the ",
-      "rat that ate the ",
-      "cat that killed the ",
-      "dog that worried the ",
-      "cow with the crumpled horn that tossed the ",
-      "maiden all forlorn that milked the ",
-      "man all tattered and torn that kissed the ",
-      "priest all shaven and shorn that married the ",
-      "rooster that crowed in the morn that woke the ",
-      "farmer sowing his corn that kept the ",
-      "horse and the hound and the horn that belonged to the "
+    @nouns = [
+      "malt that ",
+      "rat that ",
+      "cat that ",
+      "dog that ",
+      "cow with the crumpled horn that ",
+      "maiden all forlorn that ",
+      "man all tattered and torn that ",
+      "priest all shaven and shorn that ",
+      "rooster that crowed in the morn ",
+      "farmer sowing his corn that ",
+      "horse and the hound and the horn that "
+    ]
+    @verbs = [
+      "lay in the ",
+      "ate the ",
+      "killed the ",
+      "worried the ",
+      "tossed the ",
+      "milked the ",
+      "kissed the ",
+      "married the ",
+      "that woke the ",
+      "kept the ",
+      "belonged to the "
     ]
   end
 
@@ -21,7 +34,11 @@ class House
   end
 
   def middle_section(number)
-    @nounandverbs.first(number - 1).reverse.join
+    current_nouns = @nouns.first(number - 1).reverse
+    current_verbs = @verbs.first(number - 1).reverse
+    middle_part = current_nouns.zip(current_verbs).map{ |i| i.join}
+    middle_part = middle_part.join
+    return middle_part
   end
   
   def recite
@@ -43,7 +60,8 @@ class RandomHouse < House
 
   def initialize
     super
-    @nounandverbs = @nounandverbs.shuffle
+    @nouns = @nouns.shuffle
+    @verbs = @verbs.shuffle
   end
 
 end
